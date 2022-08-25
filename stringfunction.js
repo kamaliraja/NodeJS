@@ -7,10 +7,8 @@ var z = ['Node', 'JS', 'Tutorial'];
 /* In NodeJS , a variable as string by assigning a value either by 
 using single (”) or double (“”) quotes  */
    
-console.log(x);
-   
+console.log(x)
 console.log(y);
-   
 console.log("Concat Using (+) :", (x + y));
    
 console.log("Concat Using Function :", (x.concat(y)));
