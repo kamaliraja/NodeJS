@@ -10,7 +10,6 @@ using single (”) or double (“”) quotes  */
 console.log(x)
 console.log(y);
 console.log("Concat Using (+) :", (x + y));
-   
 console.log("Concat Using Function :", (x.concat(y)));
    
 console.log("Split string: ", x.split(' '));
