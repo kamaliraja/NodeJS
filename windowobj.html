@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -20,4 +21,29 @@ msg1();
     </script>
     
 </body>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <h3>Creating window object</h3>
+</head>
+<body>
+    <script>
+let value= 25; 
+   //let value global variable  
+function msg(){ 
+    window.value=150;    // window object declared inside function accessed anywhere
+alert(value);  
+}  
+function msg1(){  
+    
+alert("Windows object : "+window.value);  //it can be accessed any function
+} 
+msg() ;
+msg1();
+
+    </script>
+    
+</body>
+>>>>>>> 488e76585a2b886cd229ada8872a3e9da8e35faf
 </html>
