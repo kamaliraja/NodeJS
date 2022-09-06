@@ -1,5 +1,6 @@
   
   // sample if statements
+
   var age=15;
   function ifsamples(){
    
