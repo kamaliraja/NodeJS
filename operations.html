@@ -4,9 +4,82 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Operations using JavaScript</title>
 </head>
-<body>
+
+<body style="text-align:justify;" id="body">
+    <h1 style="color:darkblue;"> 
+            Operations using JavaScript 
+        </h1>
+        <marquee ><h2 style="background-color: yellowgreen; text-decoration-color: black;"> Operations Task</h2></marquee>
+    <script>
+       
+        let num1 = parseInt(prompt("Enter First Value : ")); 
+        let num2 = parseInt(prompt("Enter Second Value : ")); 
+
+        function mathCal(num1, num2){
+            document.write("Mathmatical Calculations ");
+            document.write("<br/> Addition of Two Numbers is : "+ (num1 + num2));
+            document.write("<br/> Subtract of Two Numbers is : "+ (num1 - num2));
+            document.write("<br/> Multiplication of Two Numbers is : "+ (num1 * num2));
+            document.write("<br/> Division of Two Numbers is : "+ (num1 / num2)+"</br>");
+        }
+
+        function biggestValue(num1, num2){
+            document.write("<br/>Find the Greatest Value ");
+            if(num1 > num2){
+                document.write("<br/>Greatest value is : "+ num1);
+            }
+            else{
+                document.write("<br/>Greatest value is : "+ num2);
+            }
+        }
+        function evenOrOdd(num1 , num2){
+            document.write("<br/>Find the odd or even number ");
+            if(num1 %2 === 0){
+                document.write("<br/>First Value is Even Number  : "+num1);
+            }
+            else{
+                document.write("<br/>First Value is Odd Number : "+num1);
+            }
+            if(num2 %2 === 0){
+                document.write("<br/>Second Value is Even Number : "+num2);
+            }
+            else{
+                document.write("<br/>Second Value is ODd Number : "+num2 +"</br>");
+            }
+        }
+        function checkAgeEligible(num1 , num2){
+            document.write("<br/>checking for age eligibility ");
+            if(num1 >= 18){
+                document.write("<br/>First Value is Eligible to vote : "+ num1);
+            }
+            else{
+                document.write("<br/>First value is not eligible to vote :" +num1);
+            }
+            if(num2 >=18){
+                document.write("<br/>Second value is Eligible to vote :" +num2);
+            }
+            else{
+                document.write("<br/>Second value is not eligible to vote :" +num2+"<br/>");
+            }
+        }
+        
+        function precedence(num1, num2){
+            document.write("<br/> Operator Precedence  ");
+            let value = 15;
+            document.write("<br/> num1 = "+num1+ "<br/> num2 = "+num2+"<br/> value = "+value);
+            document.write("<br/> First Expression is (num1+num1*(num2-num1))  : "+(num1+num1*(num2-num1)));
+            document.write("<br/> Second Expression is (num1-num2*(num2*value))  : "+(num1-num2*(num2*value)));
+            document.write("<br/> Third Expression is (num1-num2+value*num1)+(num2/value)  : "+((num1-num2+value*num1)+(num2/value)));
+        }
+        mathCal(num1, num2);
+        biggestValue(num1, num2);
+        evenOrOdd(num1, num2);
+        checkAgeEligible(num1, num2);
+        precedence(num1, num2);
+    </script>
     
 </body>
+
 </html>
