@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SwitchCase Task</title>
+</head>
+<body>
+	<h2>SwitchCase using Expression in Javascript</h2>
+   <script>
+            let num1, num2;
+            let total;
+            let choice;
+
+                choice = parseInt(prompt("Enter your choice:"))
+
+                if (choice >0 && choice <6) {
+                    num1 = parseInt(prompt("Enter first number : "))
+                    num2= parseInt(prompt("Enter second number : "))
+                }
+
+                switch (choice) {                 // switch case basic using mathematical calculations in
+                    case 1:
+                        total = num1 + num2;
+
+                        document.write("\n Addition Of Two Numbers :" + total);
+                        break
+
+                    case 2:
+                        total = num1 - num2;
+                        document.write("\n Subtraction Of Two Numbers :" + total);
+                        break
+
+                    case 3:
+                        total = num1 * num2;
+                        document.write("\n Multiplication Of Two Numbers :" + total);
+                        break
+
+                    case 4:
+                        total = num1 / num2;
+                        document.write("\n Division Of Two Numbers :" + total);
+                        break
+
+                    case 5:
+                        total = num1 % num2;
+                        document.write("\n Modulus of Two Numbers :" + total);
+                        break
+
+                 
+
+                    default:
+                        document.write("Invalid Choice:" + choice);
+                }
+
+
+</script>
+
+</body>
+</html>
