@@ -17,7 +17,7 @@
         let num1 = parseInt(prompt("Enter First Value : ")); 
         let num2 = parseInt(prompt("Enter Second Value : ")); 
 
-        function mathCal(num1, num2){
+        const mathCal = (num1, num2) =>{
             document.write("Mathmatical Calculations ");
             document.write("<br/> Addition of Two Numbers is : "+ (num1 + num2));
             document.write("<br/> Subtract of Two Numbers is : "+ (num1 - num2));
@@ -25,7 +25,7 @@
             document.write("<br/> Division of Two Numbers is : "+ (num1 / num2)+"</br>");
         }
 
-        function biggestValue(num1, num2){
+        const biggestValue = (num1, num2) =>{
             document.write("<br/>Find the Greatest Value ");
             if(num1 > num2){
                 document.write("<br/>Greatest value is : "+ num1);
@@ -34,7 +34,7 @@
                 document.write("<br/>Greatest value is : "+ num2);
             }
         }
-        function evenOrOdd(num1 , num2){
+        const evenOrOdd = (num1 , num2) =>{
             document.write("<br/>Find the odd or even number ");
             if(num1 %2 === 0){
                 document.write("<br/>First Value is Even Number  : "+num1);
@@ -49,7 +49,7 @@
                 document.write("<br/>Second Value is ODd Number : "+num2 +"</br>");
             }
         }
-        function checkAgeEligible(num1 , num2){
+        const checkAgeEligible = (num1 , num2) =>{
             document.write("<br/>checking for age eligibility ");
             if(num1 >= 18){
                 document.write("<br/>First Value is Eligible to vote : "+ num1);
@@ -66,7 +66,7 @@
         }
         
     
-        function precedence(num1, num2){
+        const precedence = (num1, num2) =>{
             document.write("<br/> Operator Precedence  ");
             let value = 15;
             document.write("<br/> num1 = "+num1+ "<br/> num2 = "+num2+"<br/> value = "+value);
