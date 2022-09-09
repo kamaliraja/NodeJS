@@ -12,7 +12,7 @@ function add(a = 50, b = 20) {
       return y;
     }
   }
-  
+
   const greater1 = add();
   const greater2= add(20, 10);
   const greater3 = greaterValue(245, 456);
