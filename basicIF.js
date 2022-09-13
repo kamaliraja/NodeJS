@@ -13,8 +13,7 @@
   const ifsample =ifsamples();
   console.log('If satement example: ', ifsample);
   
-  
-  // if else statement
+  // if else statement example 
 var age=25;
   function ifsamples(){
    
