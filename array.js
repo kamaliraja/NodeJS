@@ -47,3 +47,9 @@ console.log(arr);       //prints [ 'Chemistry', 'maths', 'physics' ]
 
 const result =arr.concat(arr1);   // using concat method
 console.log(result);      //prints [ 'Chemistry', 'maths', 'physics', 'tamil', 'english' ]
+
+const a = ['1', '2', '3', '5','2'];
+const b =['6','4'];
+ //let result1 = a.length;
+ let result1 = arr1.sort();
+ console.log(result1);
