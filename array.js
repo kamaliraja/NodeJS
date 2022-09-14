@@ -54,3 +54,4 @@ const b =['6','4'];
  let result1 = arr1.sort();
  console.log(result1);
  
+ 
