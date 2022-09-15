@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+     //using spread operatore(SO)
+    const arrValue = ["<br/>"+ 'My', 'name', 'is', 'kamali'];
+
+document.write(arrValue+" " );    // prints ["My", "name", "is", "kamali"]
+document.writeln(...arrValue); //prints My name is Jack
+
+//clone array using SO
+let arr1 =["<br/>" + '1','2','4'];
+let arr2 = [...arr1];    // using sO
+arr1.push('5');
+document.write(arr1);    //prints 1,2,4,5
+document.write(arr2);  //prints 1,2,4
+
+//SO with Object
+const obj = { x :"abc" , Y : "asd" }
+const obj1 = {...obj};
+
+document.write(obj1);
+
+function sum(x, y ,z) {
+    document.write(x + y + z);
+}
+
+const num1 = [1, 3, 4, 5];
+
+sum(...num1); // 8
+        </script>
+</body>
+</html>
