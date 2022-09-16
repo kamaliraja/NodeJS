@@ -77,3 +77,44 @@ for (const x of emp.values()) {
   text2 += x + "  ";
 }
 console.log("Map using Values : "+text2);
+
+//using set
+
+const car = new Set(["1","5","3","10"]);
+car.add("4");
+car.add("5");
+car.add("15");
+car.add("1");
+ // List all Elements
+let res = "";
+for (const x of car.values()) {
+  res += x + "  ";
+}
+console.log(car.size);
+console.log(res);
+
+//using promise
+ const myPromise = new Promise((resolve, reject) => {    
+    let condition=15;    
+      
+    if(condition>=18) {      
+        resolve('Promise: Eligible to drive ...');    
+    } else {      
+        reject('Promise: Not Eligible to drive');    
+    }  
+});  
+    
+  myPromise.then((message) => {   
+    console.log(message);  
+}).catch((message) => {   
+    console.log(message);  
+});  
+
+//using Math methods
+console.log("Math Methods");
+console.log(Math.trunc(16.5));  //16
+console.log(Math.sign(3));      //1
+console.log(Math.cbrt(4));      //1.5874010519681996
+console.log(Math.log2(8));      //3
+console.log(Math.log10(4));     //0.6020599913279624
+
