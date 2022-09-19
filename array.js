@@ -46,12 +46,15 @@ arr.sort();             // arr elements are sorted like alphabetical order
 console.log(arr);       //prints [ 'Chemistry', 'maths', 'physics' ]
 
 const result =arr.concat(arr1);   // using concat method
-console.log(result);      //prints [ 'Chemistry', 'maths', 'physics', 'tamil', 'english' ]
+console.log("Using concat() : "+result);      //prints [ 'Chemistry', 'maths', 'physics', 'tamil', 'english' ]
 
 const a = ['1', '2', '3', '5','2'];
 const b =['6','4'];
  //let result1 = a.length;
  let result1 = arr1.sort();
- console.log(result1);
+ console.log("Using sort() : "+result1);
  
+ const arr3 =["English","Tamil","Maths"]
+ arr3.splice(1,0,"Computerscience", "Bio");
  
+ console.log("Using Splice() : "+arr3);
