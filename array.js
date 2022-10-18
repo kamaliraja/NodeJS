@@ -58,3 +58,5 @@ const b =['6','4'];
  arr3.splice(1,0,"Computerscience", "Bio");
  
  console.log("Using Splice() : "+arr3);
+
+ 
