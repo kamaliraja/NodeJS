@@ -4,7 +4,7 @@ const addElement = (...args)=>{
     let result = [];
     for (const iterator of args) {
     
-        result.unshift(iterator);
+        result.push(iterator);
     }
     return result;
 }
